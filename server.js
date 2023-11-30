@@ -13,8 +13,8 @@ const io = new Server(server, {
 
 io.on('connect',(socket)=>{
     console.log('user connected ',socket.id)
-    Farkel(socket)
 })
+
 
 server.listen(port,()=>{
     console.log(`listening on ${port}`);
